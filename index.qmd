@@ -45,3 +45,46 @@ Friday 20 February 2026
 ### What's the dress code?
 
 ## What time should we arrive?
+
+
+# Site stuff
+
+- [Choose a font that matches the 'save the date'](https://fonts.google.com/)
+- 
+
+
+```{r}
+library(monochromeR)
+library(scales)
+library(tidyverse)
+
+erin <- list(
+  chocolate = "#442816",
+  brown = "#704121",
+  tan = "#ab6f44",
+  peacock = "#174050",
+  teal = "#0c657c"
+)
+
+erin |> 
+  unlist() |> 
+  show_col()
+
+generate_palette(erin$chocolate, "go_lighter", 8) |> 
+  show_col()
+
+generate_palette(erin$tan, "go_lighter", 8) |> 
+  show_col()
+
+generate_palette(erin$brown, "go_lighter", 8) |> 
+  show_col()
+
+generate_palette(erin$peacock, "go_lighter", 8) |> 
+  show_col()
+
+generate_palette(erin$teal, "go_lighter", 8) |> 
+  show_col()
+
+
+```
+
